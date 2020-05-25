@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+src_dir="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
+nohup "$src_dir/../bin/resource-monitor" &>/dev/null </dev/null &
